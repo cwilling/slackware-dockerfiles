@@ -1,0 +1,3 @@
+
+docker run --rm -it -v /var/cache/vmbuilder:/var/cache/vmbuilder chriswilling/slackware64-vmbuilder:15.0 /bin/bash -l
+

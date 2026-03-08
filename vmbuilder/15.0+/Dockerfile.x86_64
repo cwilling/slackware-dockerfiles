@@ -1,0 +1,8 @@
+#x86_64
+FROM chriswilling/slackware64:current_latest
+
+COPY install_all.sh /
+COPY rc.vmbuilder /etc/rc.d/rc.vmbuilder
+
+ARG mirror_base
+RUN ./install_all.sh "$mirror_base" && rm /install_all.sh
